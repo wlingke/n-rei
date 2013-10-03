@@ -1,0 +1,23 @@
+a {
+  cursor: pointer;
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+
+.link-underline:hover {
+  text-decoration: underline;
+}
+
+.super-header {
+  font-size: 50px;
+  line-height: 75px;
+  font-weight: bolder;
+}
+
+.para-lg {
+  line-height: 1.4;
+  font-size: $font-size-large-x2;
+}

@@ -1,0 +1,13 @@
+//font sizes
+$font-size-large-x1: $font-size-default * 1.1;
+$font-size-large-x2: $font-size-default * 1.2;
+$font-size-large-x3: $font-size-default * 1.3;
+$font-size-large-x4: $font-size-default * 1.4;
+
+$font-size-small-x1: $font-size-default * .9;
+$font-size-small-x2: $font-size-default * .8;
+$font-size-small-x3: $font-size-default * .7;
+$font-size-small-x4: $font-size-default * .6;
+
+
+$footer-height-full: $footer-height + $footer-margin;

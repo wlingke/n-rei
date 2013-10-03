@@ -1,0 +1,25 @@
+.navbar-white {
+  border: 1px solid $border-color-default;
+  @include background(linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, .9)));
+  @include box-shadow(0 1px 10px rgba(0, 0, 0, 0.065));
+
+  //.navbar-nav>.active>a, .navbar-nav>.open>a {
+  //  color: $font-color-inverse;
+  //  background-color: $light-blue-nrei;
+  //
+  //  &:hover, &:focus {
+  //    color: $font-color-inverse;
+  //    background-color: $light-blue-nrei;
+  //  }
+  //}
+}
+
+.logo img {
+  margin-top: ($navbar-main-height - 30px)/2;
+}
+
+.navbar-collapse.in, .navbar-collapse.collapsing {
+  > .pull-right, .pull-left {
+    float: none !important;
+  }
+}

@@ -1,0 +1,11 @@
+footer {
+  height: $footer-height - 1px;
+  margin-top: $footer-margin;
+  background-color: $light-gray;
+  border-top: 1px solid $border-color-default;
+  @include box-shadow(0 1px 10px rgba(0, 0, 0, 0.065));
+
+  vertical-align: middle;
+  padding: 15px 0;
+
+}

@@ -1,0 +1,27 @@
+//clearing margin & padding
+
+@each $dir in $direction {
+  @include clear-spacing($dir);
+}
+
+
+.hover-mask:hover {
+  opacity:.95;
+}
+
+.hover-mask-group:hover {
+  .hover-mask-element {
+    opacity:.95;
+  }
+}
+
+//hover appear
+.hover-appear-block {
+  display: none;
+}
+
+.hover-appear-group:hover {
+  .hover-appear-block {
+    display: block;
+  }
+}

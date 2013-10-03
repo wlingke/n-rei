@@ -1,0 +1,38 @@
+//minimum breakpoints
+
+$screen-tablet: 480px;
+$screen-dtop: 800px;
+$screen-dtop-lg: 1420px;
+
+@mixin mq($type) {
+
+  @if $type == tablet {
+    @media (min-width: $screen-tablet) {
+      @content;
+    }
+  } @else if $type == dtop {
+    @media (min-width: $screen-dtop) {
+      @content;
+    }
+  } @else if $type == dtop-lg {
+    @media (min-width: $screen-dtop-lg) {
+      @content;
+    }
+  } @else if $type == mobile-only {
+    @media (max-width: $screen-tablet) {
+      @content;
+    }
+  } @else if $type == tablet-below {
+    @media (max-width: $screen-dtop) {
+      @content;
+    }
+  } @else if $type == dtop-below {
+    @media (max-width: $screen-dtop-lg) {
+      @content;
+    }
+  }  @else {
+
+  }
+
+}
+

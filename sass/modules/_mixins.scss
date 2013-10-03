@@ -1,0 +1,62 @@
+@mixin anchor-color-gen($color, $type: darken, $percent: 15%) {
+  a {
+    color: $color;
+    &:hover, &:focus {
+      @if $type == lighten {
+        color: lighten($color, $percent);
+      } @else {
+        color: darken($color, $percent);
+      }
+    }
+  }
+}
+
+//generates clear margin and padding utilities
+$direction: null "-left" "-right" "-top" "-bottom";
+@mixin clear-spacing($dir) {
+
+  .clear-pad#{$dir} {
+    padding#{$dir}: 0 !important;
+  }
+
+  .clear-mar#{$dir} {
+    margin#{$dir}: 0 !important;
+  }
+}
+
+//Converted from Bootstrap Mixins
+@mixin btn-pseudo-states($name, $color, $background, $border: null) {
+
+  .btn-#{$name} {
+
+    @if $border == null {
+      $border: darken($background, 5%);
+    }
+
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: $color;
+      background-color: darken($background, 8%);
+      border-color: darken($border, 12%);
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+      &,
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+        background-color: $background;
+        border-color: $border
+      }
+    }
+  }
+}

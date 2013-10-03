@@ -1,0 +1,8 @@
+.feature {
+  font-size: 30px;
+  text-align: center;
+  @include mq(dtop-lg) {font-size: 35px;}
+  @include mq(mobile-only) {
+    margin-bottom: 20px;
+  }
+}
