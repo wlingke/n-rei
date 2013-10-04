@@ -1,0 +1,73 @@
+.section-hero {
+  position: relative;
+  padding: 0;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  @include mq(mobile-only) {
+    height: 400px;
+  }
+
+  .section-heading {
+    color: $font-color-inverse;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8),0 -1px 1px rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 10%;
+    margin: 0;
+    text-align: center;
+    @include mq(tablet) {
+      top: 25%
+    }
+    @include mq(dtop) {
+      top: 30%
+    }
+    @include mq(dtop-lg) {
+      top: 35%
+    }
+
+    .section-title {
+      font-size: 35px;
+      @include mq(tablet) {
+        font-size: 40px;
+      }
+      @include mq(dtop) {
+        font-size: 50px;
+      }
+      @include mq(dtop-lg) {
+        font-size: 60px;
+      }
+      margin-bottom: 40px;
+      line-height: 1.25;
+    }
+
+    .section-subtitle {
+      @include mq(mobile-only) {
+        font-size: 25px;
+      }
+    }
+
+  }
+
+}
+
+.hero-index {
+  background-image: url("/images/bg/bg-cover.png");
+}
+
+.hero-bs-info {
+  background-image: url("/images/bg/bg-cover-info.png");
+}
+
+.hero-research {
+  background-image: url("/images/bg/bg-cover-research.png");
+}
+
+.btn-hero {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-shadow: none;
+}

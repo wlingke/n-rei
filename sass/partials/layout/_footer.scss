@@ -8,4 +8,8 @@ footer {
   vertical-align: middle;
   padding: 15px 0;
 
+  .container {
+    min-width: $doc-min-width;
+  }
+
 }
