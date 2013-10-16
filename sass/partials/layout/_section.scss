@@ -23,6 +23,11 @@
   background-color: $yellow;
 }
 
+.section-dark-gray{
+  color: $font-color-inverse;
+  background-color: lighten(#394046,25%);
+}
+
 .section-heading {
   margin-top: 50px;
   margin-bottom: 50px;

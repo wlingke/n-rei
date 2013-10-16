@@ -100,54 +100,60 @@ body {
 }
 
 /* line 26, ../sass/partials/layout/_section.scss */
+.section-dark-gray {
+  color: white;
+  background-color: #72808c;
+}
+
+/* line 31, ../sass/partials/layout/_section.scss */
 .section-heading {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-/* line 31, ../sass/partials/layout/_section.scss */
+/* line 36, ../sass/partials/layout/_section.scss */
 .section-title {
   font-weight: bold;
 }
 
-/* line 35, ../sass/partials/layout/_section.scss */
+/* line 40, ../sass/partials/layout/_section.scss */
 .section-subtitle {
   line-height: 1.4;
 }
 
-/* line 39, ../sass/partials/layout/_section.scss */
+/* line 44, ../sass/partials/layout/_section.scss */
 .row-md {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 44, ../sass/partials/layout/_section.scss */
+/* line 49, ../sass/partials/layout/_section.scss */
 .row-lg {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-/* line 49, ../sass/partials/layout/_section.scss */
+/* line 54, ../sass/partials/layout/_section.scss */
 .row-inline-center {
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 54, ../sass/partials/layout/_section.scss */
+/* line 59, ../sass/partials/layout/_section.scss */
 .row-inline {
   display: table;
 }
-/* line 57, ../sass/partials/layout/_section.scss */
+/* line 62, ../sass/partials/layout/_section.scss */
 .row-inline .row-inline-element {
   display: inline-block;
   vertical-align: middle;
   margin: 10px;
 }
-/* line 63, ../sass/partials/layout/_section.scss */
+/* line 68, ../sass/partials/layout/_section.scss */
 .row-inline .list-inline {
   display: table;
 }
-/* line 65, ../sass/partials/layout/_section.scss */
+/* line 70, ../sass/partials/layout/_section.scss */
 .row-inline .list-inline > li {
   vertical-align: middle;
 }
@@ -393,6 +399,11 @@ a:hover, a:focus {
 }
 
 /* line 69, ../sass/partials/elements/_hero.scss */
+.hero-invest {
+  background-image: url("/images/bg/bg-cover-invest.png");
+}
+
+/* line 73, ../sass/partials/elements/_hero.scss */
 .btn-hero {
   margin-left: 20px;
   margin-right: 20px;
