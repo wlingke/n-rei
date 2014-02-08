@@ -1,3 +1,9 @@
 .form-control {
   margin-bottom: 10px;
 }
+
+.list-expanded {
+  >li {
+    margin-bottom: 7px;
+  }
+}

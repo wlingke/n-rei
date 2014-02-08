@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  &.section-hero-sm {
+    height: 400px;
+  }
 
   @include mq(mobile-only) {
     height: 400px;
